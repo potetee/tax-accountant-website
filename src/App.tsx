@@ -5,18 +5,15 @@ import AppRoutes from './AppRoutes';
 import Footer from "./component/Footer/Footer";
 import {Provider} from "react-redux";
 import store from "./store/store";
+import MainContent from "./component/MainContent/MainContent";
 
 
 function App() {
   return (
       <Provider store={store}>
-      <Router>
-        <Header/>
-          <main>
-            <AppRoutes/>
-          </main>
-          <Footer/>
-      </Router>
+        <Router>
+            <MainContent/>
+        </Router>
       </Provider>
   );
 }

@@ -1,23 +1,27 @@
 import React, {useEffect} from "react";
-import { Route,Routes } from "react-router-dom";
-import About from "./component/About/About";
-import Service from "./component/Services/Services";
-import Contact from "./component/Contact/Contact";
-import Home from "./component/Home/Home";
 import store from "./store/store";
 import {fetchData} from "./features/data/api";
+import {setIsMobile} from "./features/user/userSlice";
+import {RootState} from "./store/RootState";
+import {useSelector} from "react-redux";
 
 const AppRoutes = () => {
     useEffect(()=>{
         store.dispatch(fetchData());
     },[])
+    useEffect(()=>{
+        const isMobile = window.innerWidth < 768;
+        store.dispatch(setIsMobile(isMobile));
+    },[])
+    const user = ((state:RootState) => state.user);
+    const userState = useSelector(user);
+    console.log(userState.isMobile);
+
+
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Service />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+      <>
+          {userState.isMobile ? <div>mobile</div>:<div>pc</div>}
+      </>
   );
 };
 
