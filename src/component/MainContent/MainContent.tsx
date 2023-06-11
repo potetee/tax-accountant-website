@@ -20,7 +20,7 @@ const MainContent: React.FC = () => {
 
     return (
         <>
-            {userState.isMobile ? <div>mobile</div>:<DesktopComponent/>}
+            {userState.isMobile ? <DesktopComponent/>:<DesktopComponent/>}
         </>
     )
 }
