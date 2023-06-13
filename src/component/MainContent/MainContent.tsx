@@ -5,7 +5,6 @@ import {setIsMobile} from "../../features/user/userSlice";
 import {RootState} from "../../store/RootState";
 import {useSelector} from "react-redux";
 import DesktopComponent from "../DesktopComponent/DesktopComponent";
-import styles from "./MainContent.module.css";
 
 const MainContent: React.FC = () => {
     useEffect(()=>{
