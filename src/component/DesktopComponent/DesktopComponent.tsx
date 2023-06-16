@@ -21,7 +21,7 @@ const DesktopComponent:React.FC = ()=>{
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
             </Routes>
-            <Footer/>
+            {/*<Footer/>*/}
             </div>
         </>
 

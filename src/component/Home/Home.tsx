@@ -16,6 +16,9 @@ const Home:React.FC = () =>{
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div className={styles.titleDescription}>Your financial future matters - Let us help you navigate the path to success. </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -19,7 +19,6 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     width: auto;
-    height: 244.5px;
     font-weight: 600;
     font-size: 48px;
     line-height: 124.8%;
@@ -27,8 +26,15 @@
 
 .titleSecund{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     white-space: pre-wrap;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
+}
+
+.titleDescription{
+    font-family: 'Red Hat Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
 }
