@@ -25,11 +25,6 @@ const About:React.FC = ()=>{
         }
     ]
 
-    const testRender = (index:number):string=>{
-
-        return 'styles.scrollTitleBackgroundPicture' + index;
-    }
-
     return (
         <section>
             <div className={styles.aboutTitle}>
