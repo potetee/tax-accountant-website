@@ -25,6 +25,11 @@ const About:React.FC = ()=>{
         }
     ]
 
+    const testRender = (index:number):string=>{
+
+        return 'styles.scrollTitleBackgroundPicture' + index;
+    }
+
     return (
         <section>
             <div className={styles.aboutTitle}>
@@ -35,9 +40,11 @@ const About:React.FC = ()=>{
                 {
                     titleAndContent.map((item,index)=>{
                         return (
-                            <div className={styles.aboutScroll} key={index}>
-                                <div className={styles.scrollTitleBackground}>
-                                    <div className={styles.scrollTitle}>{item.title}</div>
+                            <div className={`${styles.aboutScroll} ${index % 2 === 0 ? styles.aboutScrollLeft : styles.aboutScrollRight}`} key={index}>
+                                <div className={styles['scrollTitleBackgroundPicture' + index]}>
+                                    <div className={styles.scrollTitleBack}>
+                                        <div className={styles.scrollTitle}>{item.title}</div>
+                                    </div>
                                 </div>
                                 <div className={styles.aboutScrollContent}>{item.content}</div>
                             </div>

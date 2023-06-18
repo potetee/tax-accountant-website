@@ -36,13 +36,79 @@
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 20px;
+    color: #99463A;
 }
 
-.scrollTitleBackground{
-    background: #99463A;
-    border-radius: 23px;
-    padding: 10px;
-    color: white;
-    width: 100%;
-    text-align: center;
+.scrollTitleBackgroundPicture{
+    position: relative;
+    background-image: url("../../images/scroll0.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 43px 0;
+    padding: 30px;
+}
+
+.scrollTitleBackgroundPicture0{
+    position: relative;
+    background-image: url("../../images/scroll0.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 43px 0;
+    padding: 30px;
+}
+
+.scrollTitleBackgroundPicture1{
+    position: relative;
+    background-image: url("../../images/scroll1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 43px 0;
+    padding: 30px;
+}
+
+.scrollTitleBackgroundPicture2{
+    position: relative;
+    background-image: url("../../images/scroll2.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 43px 0;
+    padding: 30px;
+}
+
+.scrollTitleBackgroundPicture3{
+    position: relative;
+    background-image: url("../../images/scroll0.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 43px 0;
+    padding: 30px;
+}
+
+
+.scrollTitleBack{
+    background: rgba(217, 217, 217, 0.9);
+    border-radius: 7px;
+    width: 240px;
+}
+
+.aboutScroll{
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.aboutScrollLeft{
+    margin-right:100px;
+}
+
+.aboutScrollRight{
+    margin-left:100px;
+}
+
+.aboutScrollContent{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
 }
