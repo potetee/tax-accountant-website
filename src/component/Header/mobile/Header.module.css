@@ -5,3 +5,9 @@
     font-size: 40px;
     padding: 5px;
 }
+
+.link {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
