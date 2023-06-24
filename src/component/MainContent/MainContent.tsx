@@ -5,6 +5,7 @@ import {setIsMobile} from "../../features/user/userSlice";
 import {RootState} from "../../store/RootState";
 import {useSelector} from "react-redux";
 import DesktopComponent from "../DesktopComponent/DesktopComponent";
+import MobileComponent from "../MobileComponent/MobileComponent";
 
 const MainContent: React.FC = () => {
     useEffect(()=>{
@@ -19,7 +20,7 @@ const MainContent: React.FC = () => {
 
     return (
         <>
-            {userState.isMobile ? <DesktopComponent/>:<DesktopComponent/>}
+            {userState.isMobile ? <MobileComponent/>:<DesktopComponent/>}
         </>
     )
 }

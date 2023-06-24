@@ -1,0 +1,7 @@
+.headerBack{
+    height: 40px;
+    display: flex;
+    justify-content: right;
+    font-size: 40px;
+    padding: 5px;
+}

@@ -1,0 +1,12 @@
+.backgroundImage{
+    background-image: url('../../images/DesktopBackground.PNG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
