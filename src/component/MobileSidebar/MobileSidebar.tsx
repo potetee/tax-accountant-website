@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./MobileSidebar.module.css";
+import {Link} from "react-router-dom";
 
 const MobileSidebar: React.FC<MobileSidebarProps> = ({setShowSidebar,showSidebar}) =>{
     const handleClick = () => {
@@ -16,10 +17,10 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({setShowSidebar,showSidebar
         <div className={`${styles.sideBar}
         ${showSidebar ? styles.slideIn : styles.slideOut}`}>
             <div className={styles.sectionParent}>
-                <div className={styles.eachSection}>HOME</div>
-                <div className={styles.eachSection}>ABOUT</div>
-                <div className={styles.eachSection}>SERVICES</div>
-                <div className={styles.eachSection}>BLOG</div>
+                <div className={styles.eachSection}><Link className={styles.link} to='/' onClick={handleClick}>HOME</Link></div>
+                <div className={styles.eachSection}><Link className={styles.link} to='/about' onClick={handleClick}>ABOUT</Link></div>
+                <div className={styles.eachSection}><Link className={styles.link} to='/services' onClick={handleClick}>SERVICES</Link></div>
+                <div className={styles.eachSection}><Link className={styles.link} to='/blog' onClick={handleClick}>BLOG</Link></div>
             </div>
         </div>
     );

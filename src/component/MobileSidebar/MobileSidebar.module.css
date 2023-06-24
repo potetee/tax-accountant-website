@@ -44,3 +44,8 @@
     font-size: 24.98px;
     line-height: 36px;
 }
+
+.link {
+    text-decoration: none;
+    color: black;
+}
