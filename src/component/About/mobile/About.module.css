@@ -32,8 +32,8 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 15.034px;
+    line-height: 150.3%;
     color: #99463A;
 }
 
@@ -86,7 +86,8 @@
 .scrollTitleBack{
     background: rgba(217, 217, 217, 0.9);
     border-radius: 7px;
-    width: 240px;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutScroll{
