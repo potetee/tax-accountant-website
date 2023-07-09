@@ -8,6 +8,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Blog from "../Blog/Blog";
 import styles from "./DesktopComponent.module.css";
+import Admin from "../Admin/Admin";
 
 const DesktopComponent:React.FC = ()=>{
     return (
@@ -20,6 +21,7 @@ const DesktopComponent:React.FC = ()=>{
                 <Route path="/services" element={<Service />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
+                <Route path="/admin" element={<Admin />} />
             </Routes>
             {/*<Footer/>*/}
             </div>
