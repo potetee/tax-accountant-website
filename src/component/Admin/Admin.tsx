@@ -1,12 +1,26 @@
 import React from 'react';
 import styles from './Admin.module.css';
+import store from "../../store/store";
+import login from "../../features/login/loginSlice";
+import {setUsername,setPassword} from "../../features/login/loginSlice";
+import {useDispatch} from "react-redux";
+
+
+
 
 function Admin() {
 
     const [login, setLogin] = React.useState(true);
 
+    const dispatch = useDispatch();
     const loginCheck = () => {
-        setLogin(false);
+        setLogin(true);
+        tryLogin();
+    }
+
+    const tryLogin = () => {
+        dispatch(setUsername("user"));
+        dispatch(setPassword("password"));
     }
 
     const dummyData = [
