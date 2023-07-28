@@ -1,57 +1,47 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from './Admin.module.css';
 import store from "../../store/store";
-import login from "../../features/login/loginSlice";
 import {setUsername,setPassword} from "../../features/login/loginSlice";
 import {useDispatch} from "react-redux";
-
-
+import {fetchData} from "../../features/data/api";
+import {useSelector} from "react-redux";
+import {RootState} from "../../store/RootState";
+import {dummyData} from "../../utils/dummyData";
 
 
 function Admin() {
-
+    const user = useSelector((state: RootState) => state.login.username);
+    const password = useSelector((state: RootState) => state.login.password);
+    const inquiryData = useSelector((state: RootState) => state.data);
     const [login, setLogin] = React.useState(true);
+    const [loginSucess, setLoginSucess] = React.useState(true);
+    const [shake, setShake] = React.useState(false);
 
     const dispatch = useDispatch();
     const loginCheck = () => {
-        setLogin(true);
-        tryLogin();
+        store.dispatch(fetchData({user: user, password: password}));
     }
 
-    const tryLogin = () => {
-        dispatch(setUsername("user"));
-        dispatch(setPassword("password"));
-    }
-
-    const dummyData = [
-        {
-            id: 1,
-            date: "2021-01-01 17:15:19",
-            mailAddress: "test@mail.com",
-            message: "初めまして、こんにちは。私の名前は名前です。"
-        },
-        {
-            id: 2,
-            date: "2021-01-02 17:15:19",
-            mailAddress: "tess@mail.com",
-            message: "質問します。"
-        },
-        {
-            id: 3,
-            date: "2021-01-03 17:15:19",
-            mailAddress: "ee@mail.com",
-            message: "お世話になっております。"
+    useEffect(() => {
+        if(inquiryData.status === 200) {
+            setLogin(false);
+            setLoginSucess(true);
+        }else if(inquiryData.status === 401){
+            setLoginSucess(false)
+            setTimeout(() => {setLoginSucess(true)},3000);
+            setShake(true);
+            setTimeout(() => {setShake(false)},500);
         }
-    ]
+    }, [inquiryData]);
 
     const renderTableData = () => {
-        return dummyData.map((data, index) => {
-            const { id, date, mailAddress, message } = data
+        return inquiryData.data.map((data, index) => {
+            const {  date, mail, inquiry } = data
             return (
-                <tr key={id}  className={styles.tableRow}>
-                    <td className={styles.tableData}>{date}</td>
-                    <td className={styles.tableData}>{mailAddress}</td>
-                    <td className={styles.tableData}>{message}</td>
+                <tr key={index}  className={styles.tableRow}>
+                    <td className={`${styles.tableData} ${styles.dateColumn}`}>{date}</td>
+                    <td className={`${styles.tableData} ${styles.mailColumn}`}>{mail}</td>
+                    <td className={`${styles.tableData} ${styles.inquiryColumn}`}>{inquiry}</td>
                 </tr>
             )
         })
@@ -59,13 +49,22 @@ function Admin() {
 
     const loginBox = () => {
         return (
-            <div className={styles.loginBox}>
+            <div className={` ${styles.loginBox}  ${shake ? styles.shake : ''} `}>
                 <div className={styles.loginTitle}>Login</div>
+                {!loginSucess && <div><span className={styles.failedColor}>Login Failed</span></div>}
                 <div className={styles.loginContent}>
                     <div className={styles.loginContentTitle}>Mail Address</div>
-                    <input className={styles.loginContentInput} type="text" />
+                    <input
+                        className={styles.loginContentInput}
+                        type="text"
+                        onChange={(e) => dispatch(setUsername(e.target.value))}
+                    />
                     <div className={styles.loginContentTitle}>Password</div>
-                    <input className={styles.loginContentInput} type="password" />
+                    <input
+                        className={styles.loginContentInput}
+                        type="password"
+                        onChange={(e) => dispatch(setPassword(e.target.value))}
+                    />
                     <button onClick={loginCheck} className={styles.loginContentButton}>Login</button>
                 </div>
             </div>

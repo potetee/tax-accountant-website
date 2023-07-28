@@ -7,9 +7,6 @@ import {useSelector} from "react-redux";
 
 const AppRoutes = () => {
     useEffect(()=>{
-        store.dispatch(fetchData());
-    },[])
-    useEffect(()=>{
         const isMobile = window.innerWidth < 768;
         store.dispatch(setIsMobile(isMobile));
     },[])
