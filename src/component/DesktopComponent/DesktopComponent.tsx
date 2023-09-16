@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 import Blog from "../Blog/Blog";
 import styles from "./DesktopComponent.module.css";
 import Admin from "../Admin/Admin";
+import EmailContactComponent from "../EmailContact/EmailContactComponent";
 
 const DesktopComponent:React.FC = ()=>{
     return (
@@ -19,7 +20,7 @@ const DesktopComponent:React.FC = ()=>{
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Service />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/contact" element={<EmailContactComponent />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/admin" element={<Admin />} />
             </Routes>
