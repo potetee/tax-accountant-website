@@ -29,13 +29,14 @@
     justify-content: space-around;
     margin-left:200px;
     margin-right:200px;
+    margin-bottom: 30px;
 }
 
 .serviceEachTitle{
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20.1826px;
+    font-size: 18px;
     line-height: 27px;
     color: #342D32;
 }
@@ -55,4 +56,8 @@
 .centerImage {
     display: flex;
     justify-content: center;
+}
+
+.serviceList{
+    margin-top:15px;
 }

@@ -28,6 +28,7 @@
             inset 0 -5px 3px rgba(0, 0, 0, 0.25),
             inset 5px 0 3px rgba(0, 0, 0, 0.25),
             inset -5px 0 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
 }
 
 .scrollTitle{
@@ -88,7 +89,7 @@
 .scrollTitleBack{
     background: rgba(217, 217, 217, 0.9);
     border-radius: 7px;
-    width: 240px;
+    width: 280px;
 }
 
 .aboutScroll{
@@ -111,4 +112,5 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 26px;
+    white-space: pre-line;
 }

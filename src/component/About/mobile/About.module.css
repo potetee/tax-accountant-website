@@ -26,6 +26,7 @@
             inset 0 -5px 3px rgba(0, 0, 0, 0.25),
             inset 5px 0 3px rgba(0, 0, 0, 0.25),
             inset -5px 0 3px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
 }
 
 .scrollTitle{
@@ -97,11 +98,11 @@
 }
 
 .aboutScrollLeft{
-    margin-right:100px;
+    /*margin-right:100px;*/
 }
 
 .aboutScrollRight{
-    margin-left:100px;
+    /*margin-left:100px;*/
 }
 
 .aboutScrollContent{
@@ -110,6 +111,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 26px;
+    white-space: pre-line;
 }
 
 .section{
