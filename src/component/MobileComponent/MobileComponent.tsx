@@ -7,6 +7,7 @@ import About from "../About/mobile/About";
 import Services from "../Services/mobile/Servcies";
 import Blog from "../Blog/mobile/Blog";
 import MobileSidebar from "../MobileSidebar/MobileSidebar";
+import Fee from "../Fee/mobile/FeeComponent";
 
 const MobileComponent:React.FC = ()=>{
 
@@ -24,6 +25,7 @@ const MobileComponent:React.FC = ()=>{
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/services" element={<Services />} />
+                    <Route path="/fee" element={<Fee />} />
                     <Route path="/blog" element={<Blog />} />
                 </Routes>
 
