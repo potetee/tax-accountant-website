@@ -5,10 +5,6 @@ import {blogData} from "./BlogContent";
 const Blog: React.FC = () =>{
     return(
         <>
-            <div className={styles.blogTitle}>
-                <div className={styles.blogTitleFirst}>OUR </div>
-                <div>BLOG</div>
-            </div>
             <div className={styles.blogBase}>
                 <div className={styles.blogContentBase}>
                     {

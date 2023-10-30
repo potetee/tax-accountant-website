@@ -5,9 +5,6 @@ import styles from "./FeeComponent.module.css";
 const Fee:React.FC = ()=>{
     return(
         <section>
-            <header className={styles.feeTitle}>
-                <h2>当事務所の<span className={styles.feeTitleColor}>料金について</span></h2>
-            </header>
             <div className={styles.feeBackgroundPosition}>
                 <div className={styles.feeBackground} >
                     <article>

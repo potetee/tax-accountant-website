@@ -1,14 +1,10 @@
 import React from "react";
 import styles from "./About.module.css";
-import {titleAndContent} from "../../../utils/Messages";
+import {mailAddress, titleAndContent} from "../../../utils/Messages";
 
 const About:React.FC = ()=>{
     return (
         <section className={styles.section}>
-            <div className={styles.aboutTitle}>
-                <div>ABOUT ACCOUNTANT</div>
-                <div className={styles.aboutTitleSecond}>COMPANY</div>
-            </div>
             <div className={styles.aboutScrollBase}>
                 {
                     titleAndContent.map((item,index)=>{
@@ -25,6 +21,9 @@ const About:React.FC = ()=>{
                         )
                     })
                 }
+                <a href={`mailto:${mailAddress}`} className={styles.aboutScrollLeft}  target="_blank" rel="noreferrer">
+                    メールでのお問い合わせはこちら
+                </a>
             </div>
         </section>
     );

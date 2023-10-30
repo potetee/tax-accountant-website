@@ -16,19 +16,16 @@
 
 .aboutScrollBase{
     position: relative;
-    left: 25%;
-    margin-top: 20px;
-    width: 60%;
+    margin-top: 0;
     background: #D5D1C3C9;
     background: rgba(213, 209, 195, 0.79);
-    border-radius: 23px;
-    padding: 30px;
+    padding: 30px 10px;
     box-shadow:
             inset 0 5px 3px rgba(0, 0, 0, 0.25),
             inset 0 -5px 3px rgba(0, 0, 0, 0.25),
             inset 5px 0 3px rgba(0, 0, 0, 0.25),
             inset -5px 0 3px rgba(0, 0, 0, 0.25);
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .scrollTitle{
@@ -99,11 +96,11 @@
 }
 
 .aboutScrollLeft{
-    margin-right:100px;
+    margin-right:0;
 }
 
 .aboutScrollRight{
-    margin-left:100px;
+    margin-left:0;
 }
 
 .aboutScrollContent{

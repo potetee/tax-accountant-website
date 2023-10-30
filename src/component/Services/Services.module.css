@@ -17,19 +17,22 @@
 }
 
 .eachServiceOutline{
-    background: linear-gradient(180deg, #C1C0BC 0%, #D5D1C3 38.54%);
+    background: rgba(213, 209, 195, 0.79);
     opacity: 0.87;
-    border-radius: 29.433px;
-    width: 274.15px;
+    width: 100%;
     padding:20px;
+    box-shadow:
+            inset 0 5px 3px rgba(0, 0, 0, 0.25),
+            inset 0 -5px 3px rgba(0, 0, 0, 0.25),
+            inset 5px 0 3px rgba(0, 0, 0, 0.25),
+            inset -5px 0 3px rgba(0, 0, 0, 0.25);
 }
 
 .serviceTitleOutline{
     display: flex;
     justify-content: space-around;
-    margin-left:200px;
-    margin-right:200px;
-    margin-bottom: 30px;
+    margin:0;
+    height: 100vh;
 }
 
 .serviceEachTitle{

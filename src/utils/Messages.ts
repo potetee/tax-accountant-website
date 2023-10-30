@@ -8,6 +8,8 @@ export const SERVICE1_LIST =['税務顧問(税務&会計)','決算申告書作�
     '税務調査の立ち会い','保険指導','開業・会社設立支援','自計化システムの導入支援']
 export const SERVICE2_LIST = ['相続税申告','相続税試算','相続税対策']
 
+export const mailAddress:string = 'E-mail:contact@tax-ohata.com';
+
 export const titleAndContent: {title:string,content:string }[] = [
     {
         title: 'Profile',
@@ -24,7 +26,6 @@ export const titleAndContent: {title:string,content:string }[] = [
             '代表者名:大幡周平\n' +
             '所在地:〒143-0011 東京都大田区大森本町1-8-10\n' +
             'Tel:090-8966-2307\n' +
-            'E-mail:contact@tax-ohata.com\n' +
             '設立:2023年11月\n' +
             '営業時間:平日 8:00~17:00 (ご連絡いただければ土日、時間外も対応いたします)\n' +
             '主な対応地域:東京都、神川県、千葉県\n' +

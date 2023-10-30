@@ -13,10 +13,6 @@ import {
 const Services:React.FC = () =>{
     return(
         <section>
-            <div className={styles.serviceTitle}>
-                <div className={styles.serviceTitleFirstCharacter}>業</div><div>務内容</div>
-            </div>
-
             <div className={styles.serviceTitleOutline}>
                 <div className={styles.eachServiceOutline}>
                     <div>
