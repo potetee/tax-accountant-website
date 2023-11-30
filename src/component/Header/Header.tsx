@@ -7,8 +7,8 @@ const Header: React.FC = () =>{
         <header className={styles.header}>
             <div className={styles.logoAndNav}>
                 <div className={styles.headerTitle}>
-                    <div className={styles.headerMainTitle}>ACCOUNTANT</div>
-                    <div className={styles.headerSubTitle}>Accounting and other services</div>
+                    <div className={styles.headerMainTitle}>Ohata Shuhei</div>
+                    <div className={styles.headerSubTitle}>Tax Accountant Office</div>
                 </div>
                 <nav className={styles.nav}>
                     <ul className={styles.ul}>

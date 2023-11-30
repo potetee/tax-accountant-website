@@ -1,5 +1,5 @@
 import React from "react";
-import {corporateFees, individualFees} from "./FeeContent";
+import {corporateFees, individualFees,inheritFees} from "./FeeContent";
 import styles from "./FeeComponent.module.css";
 
 const Fee:React.FC = ()=>{
@@ -28,6 +28,23 @@ const Fee:React.FC = ()=>{
                         <h3 className={styles.title}>{individualFees.title}</h3>
                         {
                             individualFees.items.map((item,index)=>{
+                                return (
+                                    <div key={index}>
+                                        <ul className={styles.itemTitle}>{item.name}</ul>
+                                        {item.details.map((detail,i)=>{
+                                            return (
+                                                <li className={styles.eachFee} key={i}>{detail}</li>
+                                            );
+                                        })}
+                                    </div>
+                                )
+                            })
+                        }
+                    </article>
+                    <article>
+                        <h3 className={styles.title}>{inheritFees.title}</h3>
+                        {
+                            inheritFees.items.map((item,index)=>{
                                 return (
                                     <div key={index}>
                                         <ul className={styles.itemTitle}>{item.name}</ul>

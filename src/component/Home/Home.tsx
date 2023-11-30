@@ -8,16 +8,12 @@ const Home:React.FC = () =>{
             <div className={styles.underTitleSpace}>
                 <div>
                     <div className={styles.title}>
-                        <div>ACCOUNTING </div>
+                        <div>大幡周平税理士事務所 </div>
                         <div className={styles.titleSecund}>
-                            <div>& </div>
-                            <div className={styles.titleSecundColor}>
-                                FINANCIAL SERVICES
-                            </div>
                         </div>
                     </div>
                     <div>
-                        <div className={styles.titleDescription}>Your financial future matters - Let us help you navigate the path to success. </div>
+                        <div className={styles.titleDescription}>税理士＋αの価値を </div>
                     </div>
                 </div>
             </div>

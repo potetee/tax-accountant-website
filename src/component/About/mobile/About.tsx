@@ -10,7 +10,7 @@ const About:React.FC = ()=>{
                     titleAndContent.map((item,index)=>{
                         return (
                             <div className={styles.aboutScroll} key={index}>
-                                <div className={styles['scrollTitleBackgroundPicture' + index]}>
+                                <div >
                                     <div className={styles.scrollTitleBack}>
                                         <div className={styles.scrollTitle}>{item.title}</div>
                                     </div>

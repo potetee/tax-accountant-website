@@ -26,14 +26,14 @@
             inset 5px 0 3px rgba(0, 0, 0, 0.25),
             inset -5px 0 3px rgba(0, 0, 0, 0.25);
     margin-bottom: 0;
+    background-color: white;
 }
 
 .scrollTitle{
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 45px;
     color: #99463A;
 }
 
@@ -87,6 +87,8 @@
     background: rgba(217, 217, 217, 0.9);
     border-radius: 7px;
     width: 280px;
+    display: flex;
+    justify-content: center;
 }
 
 .aboutScroll{
@@ -107,7 +109,23 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 50px;
     white-space: pre-line;
+}
+
+.titleWrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.contentWrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }

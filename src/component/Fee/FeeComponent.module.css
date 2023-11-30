@@ -21,8 +21,6 @@
     position: relative;
     margin-top: 0;
     height: 100vh;
-    background: #D5D1C3C9;
-    background: rgba(213, 209, 195, 0.79);
     padding: 30px;
     box-shadow:
             inset 0 5px 3px rgba(0, 0, 0, 0.25),
@@ -41,4 +39,5 @@
 
 .feeSection{
     display: block;
+    background-color: white;
 }
