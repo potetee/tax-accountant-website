@@ -8,8 +8,7 @@
     display: flex;
     left:52%;
     position: relative;
-    margin-top: 110px;
-    margin-bottom: 40px;
+    margin: 18.72px 0;
 }
 
 .serviceTitleFirstCharacter{
@@ -17,12 +16,6 @@
 }
 
 .eachServiceOutline{
-    padding:20px;
-    box-shadow:
-            inset 0 5px 3px rgba(0, 0, 0, 0.25),
-            inset 0 -5px 3px rgba(0, 0, 0, 0.25),
-            inset 5px 0 3px rgba(0, 0, 0, 0.25),
-            inset -5px 0 3px rgba(0, 0, 0, 0.25);
     background-color: white;
 }
 
@@ -30,6 +23,12 @@
     justify-content: space-around;
     margin:0;
     height: 100vh;
+    padding:30px;
+    box-shadow:
+            inset 0 5px 3px rgba(0, 0, 0, 0.25),
+            inset 0 -5px 3px rgba(0, 0, 0, 0.25),
+            inset 5px 0 3px rgba(0, 0, 0, 0.25),
+            inset -5px 0 3px rgba(0, 0, 0, 0.25);
 }
 
 .serviceEachTitle{
@@ -43,7 +42,7 @@
 
 .serviceBorder{
     box-sizing: border-box;
-    border: 1.52283px solid #42444A;
+    border-bottom: 2px solid #99463A;
 }
 
 .eachPicture{
@@ -65,4 +64,15 @@
 .sectionBackground{
     background: white;
     height: 100vh;
+}
+
+.titleOutline{
+    margin: 18.72px 0;
+}
+
+.servicePicture{
+    position: absolute;
+    opacity: 26%;
+    left: 37%;
+    top: 25%;
 }

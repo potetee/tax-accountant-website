@@ -4,8 +4,8 @@
 
 .underTitleSpace{
     background: #D5D1C366;
-    top:30%;
-    left:30%;
+    top:20%;
+    left:52%;
     position: absolute;
     border-radius: 10px;
 }
@@ -22,6 +22,7 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 124.8%;
+    color: #42444A;
 }
 
 .titleSecund{
@@ -36,5 +37,6 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
+    color: #42444A;
 }

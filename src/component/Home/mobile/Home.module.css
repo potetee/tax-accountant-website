@@ -1,15 +1,13 @@
 .homeContentBackground {
-    background: rgba(255, 255, 255, 0.45);
     border-radius: 12.199px;
     margin-top: 30%;
     width: 80%;
-
+    color: #42444A;
 }
 
 .homeContent{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    left: 30%;
+    position: relative;
 }
 
 .homeContentTitle{
@@ -29,7 +27,7 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 18.0467px;
+    font-size: 16px;
     line-height: 180.3%;
     padding: 4%;
 }

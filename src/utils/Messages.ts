@@ -1,10 +1,10 @@
 
-export const SERVICE1 = '<法人・個人事業主向けサービス>';
+export const SERVICE1 = '法人・個人事業主向けサービス';
 export const SERVICE1_DESCRIPTION = '単純な会計税務の作業だけでなく、これまでの経験とノウハウでお客様にとって価値のあるサービス、提案を提供致します。\n' +
     '税務顧問は毎月訪問を原則としていますが、ご予算・必要度に応じて隔月訪問などオーダーメイド型の対応も可能です。';
-export const SERVICE2 = '<相続関連サービス>';
+export const SERVICE2 = '相続関連サービス';
 export const SERVICE2_DESCRIPTION = '';
-export const SERVICE0 = '<当事務所の特徴>';
+export const SERVICE0 = '当事務所の特徴';
 export const SERVICE0_DESCRIPTION = '初回相談は完全無料で対応します。';
 
 export const SERVICE1_LIST =['税務顧問(税務&会計)','決算申告書作成、確定申告書作成','経営相談','節税対策','経営計画の策定支援',

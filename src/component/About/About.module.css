@@ -19,7 +19,7 @@
     margin-top: 0;
     background: #D5D1C3C9;
     background: rgba(213, 209, 195, 0.79);
-    padding: 30px 10px;
+    padding: 30px;
     box-shadow:
             inset 0 5px 3px rgba(0, 0, 0, 0.25),
             inset 0 -5px 3px rgba(0, 0, 0, 0.25),
@@ -33,8 +33,7 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 45px;
-    color: #99463A;
+    margin: 0;
 }
 
 .scrollTitleBackgroundPicture{
@@ -84,16 +83,13 @@
 
 
 .scrollTitleBack{
-    background: rgba(217, 217, 217, 0.9);
     border-radius: 7px;
     width: 280px;
     display: flex;
-    justify-content: center;
 }
 
 .aboutScroll{
-    margin-top: 50px;
-    margin-bottom: 50px;
+
 
 }
 
@@ -109,23 +105,34 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 50px;
+    line-height: 40px;
     white-space: pre-line;
 }
 
 .titleWrap {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    border-bottom: 2px solid #99463A;
+    margin:18.720px 0;
 }
 
 .contentWrap {
     position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+}
+
+.picturePresident{
+    width: 340px;
+    height: 260px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.pictureContent{
+    margin:auto;
 }

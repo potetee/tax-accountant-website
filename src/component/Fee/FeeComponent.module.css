@@ -41,3 +41,10 @@
     display: block;
     background-color: white;
 }
+
+.pricePicture{
+    position: absolute;
+    opacity: 26%;
+    left: 37%;
+    top: 25%;
+}

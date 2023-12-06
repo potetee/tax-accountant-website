@@ -10,7 +10,6 @@ import {
     SERVICE2_LIST
 } from "../../../utils/Messages";
 
-
 const Services:React.FC = () =>{
     return(
         <section className={styles.sectionBackground}>
@@ -18,7 +17,7 @@ const Services:React.FC = () =>{
                 <div>
                     <div className={styles.eachServiceOutline}>
                         <div>
-                            <div className={styles.serviceEachTitle}>{SERVICE0}</div>
+                            <h3 className={styles.serviceEachTitle}>{SERVICE0}</h3>
                             <div className={styles.serviceBorder}/>
                         </div>
                         <div>

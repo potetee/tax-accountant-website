@@ -1,10 +1,12 @@
 import React from "react";
 import {corporateFees, individualFees,inheritFees} from "./FeeContent";
 import styles from "./FeeComponent.module.css";
+import pricePicture from "../../images/pricePicture.jpg"
 
 const Fee:React.FC = ()=>{
     return(
         <section className={styles.feeSection}>
+            <img src={pricePicture} alt="pricePicture" className={styles.pricePicture}/>
             <div className={styles.feeBackgroundPosition}>
                 <div className={styles.feeBackground} >
                     <article>

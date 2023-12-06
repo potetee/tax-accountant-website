@@ -21,7 +21,8 @@ const MobileSidebar: React.FC<MobileSidebarProps> = ({setShowSidebar,showSidebar
                 <div className={styles.eachSection}><Link className={styles.link} to='/about' onClick={handleClick}>ABOUT</Link></div>
                 <div className={styles.eachSection}><Link className={styles.link} to='/services' onClick={handleClick}>SERVICES</Link></div>
                 <div className={styles.eachSection}><Link className={styles.link} to='/fee' onClick={handleClick}>FEE</Link></div>
-                <div className={styles.eachSection}><Link className={styles.link} to='/blog' onClick={handleClick}>BLOG</Link></div>
+                {/*TODO the blog is not ready yet*/}
+                {/*<div className={styles.eachSection}><Link className={styles.link} to='/blog' onClick={handleClick}>BLOG</Link></div>*/}
             </div>
         </div>
     );

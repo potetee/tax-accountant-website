@@ -1,11 +1,5 @@
 
 .aboutTitle{
-    font-family: 'Red Hat Display', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 124.8%;
-    width: 60%;
 
 }
 
@@ -27,12 +21,10 @@
 }
 
 .scrollTitle{
+    margin:0;
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 15.034px;
     line-height: 150.3%;
-    color: #99463A;
 }
 
 .scrollTitleBackgroundPicture{
@@ -82,24 +74,16 @@
 
 
 .scrollTitleBack{
-    background: rgba(217, 217, 217, 0.9);
-    border-radius: 7px;
     display: flex;
-    justify-content: center;
 }
 
 .aboutScroll{
-    margin-top: 50px;
-    margin-bottom: 50px;
-
 }
 
 .aboutScrollLeft{
-    /*margin-right:100px;*/
 }
 
 .aboutScrollRight{
-    /*margin-left:100px;*/
 }
 
 .aboutScrollContent{
@@ -114,4 +98,19 @@
 .section{
     display: flex;
     flex-direction: column;
+}
+
+.titleWrap{
+    margin:18.720px 0;
+    border-bottom: 2px solid #99463A;
+}
+
+.picturePresident{
+    width: 340px;
+    height: 260px;
+}
+.pictureWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

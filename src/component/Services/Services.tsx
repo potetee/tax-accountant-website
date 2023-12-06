@@ -10,14 +10,15 @@ import {
     SERVICE2_DESCRIPTION,
     SERVICE2_LIST
 } from "../../utils/Messages";
-
+import servicePaper from "../../images/handsTogther.jpg";
 
 const Services:React.FC = () =>{
     return(
         <section className={styles.sectionBackground}>
+            <img className={styles.servicePicture} src={servicePaper} alt={'paper'} />
             <div className={styles.serviceTitleOutline}>
                 <div className={styles.eachServiceOutline}>
-                    <div>
+                    <div className={styles.titleOutline}>
                         <div className={styles.serviceEachTitle}>{SERVICE0}</div>
                         <div className={styles.serviceBorder}/>
                     </div>
@@ -34,7 +35,7 @@ const Services:React.FC = () =>{
                     </div>
                 </div>
                 <div className={styles.eachServiceOutline}>
-                    <div>
+                    <div className={styles.titleOutline}>
                         <div className={styles.serviceEachTitle}>{SERVICE1}</div>
                         <div className={styles.serviceBorder}/>
                     </div>
@@ -52,7 +53,7 @@ const Services:React.FC = () =>{
                     </div>
                 </div>
                 <div className={styles.eachServiceOutline}>
-                    <div>
+                    <div className={styles.titleOutline}>
                         <div className={styles.serviceEachTitle}>{SERVICE2}</div>
                         <div className={styles.serviceBorder}/>
                     </div>
