@@ -63,16 +63,18 @@
 
 .sectionBackground{
     background: white;
-    height: 100vh;
+    height: 100%;
 }
 
 .titleOutline{
     margin: 18.72px 0;
+    width: 50%;
 }
 
 .servicePicture{
     position: absolute;
-    opacity: 26%;
-    left: 37%;
-    top: 25%;
+    left: 60%;
+    top: 45%;
+    width: 360px;
+    height: 360px;
 }
