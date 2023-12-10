@@ -4,8 +4,8 @@
 
 .underTitleSpace{
     background: #D5D1C366;
-    top:20%;
-    left:52%;
+    top: 15%;
+    left: 66%;
     position: absolute;
     border-radius: 10px;
 }
@@ -19,8 +19,8 @@
     font-family: 'Red Hat Display', sans-serif;
     font-style: normal;
     width: auto;
-    font-weight: 600;
-    font-size: 48px;
+    font-weight: 500;
+    font-size: 40px;
     line-height: 124.8%;
     color: #42444A;
 }
@@ -39,4 +39,5 @@
     font-weight: 600;
     font-size: 18px;
     color: #42444A;
+    margin-left: 90px;
 }
