@@ -40,7 +40,7 @@ const Services:React.FC = () =>{
                         <div className={styles.serviceBorder}/>
                     </div>
                     <div>
-                        <div>{SERVICE1_DESCRIPTION}</div>
+                        <div  className={styles.serviceTitle2}>{SERVICE1_DESCRIPTION}</div>
                         <div className={styles.serviceList}>
                             {SERVICE1_LIST.map((item, index)=>{
                                 return(

@@ -5,7 +5,7 @@ export const corporateFees: FeeData = {
             name: "顧問契約",
             details: [
                 "月額 30,000円～",
-                "決算料金 顧問料の6ヶ月分",
+                "決算料 顧問料の6ヶ月分",
                 "年末調整 顧問料の1ヶ月分"
             ]
         },
