@@ -1,8 +1,8 @@
 .backgroundImage{
-    background-image: url('../../images/DesktopBackground.PNG');
+    background-image: url('../../images/BigTokyoTower.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: -370px;
+    background-position: -550px;
     background-size: cover;
     position: relative;
     width: 100%;

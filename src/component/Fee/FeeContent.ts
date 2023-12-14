@@ -34,7 +34,7 @@ export const individualFees: FeeData = {
         {
             name: "顧問契約",
             details: [
-                "顧問契約月額 10,000円～",
+                "月額 10,000円～",
             ],
         },
         {
